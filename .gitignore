@@ -36,3 +36,7 @@ UserInterfaceState.xcuserstate
 
 # Firebase hosting directory
 .firebase/
+
+android/.gradle/
+android/build/
+android/local.properties
