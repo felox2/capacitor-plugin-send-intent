@@ -1,11 +1,5 @@
 import { PluginListenerHandle } from "@capacitor/core";
 
-declare module "@capacitor/core" {
-  interface PluginRegistry {
-    SendIntent: SendIntentPlugin;
-  }
-}
-
 export interface SendIntentPlugin {
   /**
   * Listen for send action intent events (Android only). The extras will be passed as a key value pair
