@@ -28,7 +28,7 @@ class SendIntent : Plugin() {
         }
 
         val ret = JSObject()
-        ret.put("type", intent.type)
+        ret.put("type", intent.clipData?.description?.getMimeType(0) ?: intent.type)
         ret.put("extras", extras)
 
         notifyListeners(EVENT_SEND_ACTION_INTENT, ret, true)
